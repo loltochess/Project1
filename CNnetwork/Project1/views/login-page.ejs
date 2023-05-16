@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+
+    <style>
+        /* <Your codes here> (bonus points) */
+        .login-box {
+            max-width: 400px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 5px; /* using border-radius makes the box more prettier! :)*/
+            background-color: white;
+            box-shadow: 0px 0px 1px 1px black;
+        }
+        .login-box h1 {
+            text-align: center;
+            margin-bottom:20px;
+        }
+        label {
+            font-weight: bolder;
+            display : block;
+            margin-bottom : 10px;
+        }
+        input[type="ID"], input[type="password"] {
+            display: block; 
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* i used CCC because background color of login box is white.:)*/
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            display:block; /* display: block and margin: auto -> moves the login button to the middle of the login box*/
+            margin:auto;
+            background-color: #4CAF50; /* i get reference color that of github login page.*/
+            color: #fff;
+            padding: 10px 20px; /* sero: 10px , garo: 20px */
+            border: 1px;
+            border-radius: 5px;
+            cursor: pointer; /* "cursor: pointer" makes mouse pointer a hand when i move pointer to the button. :)*/
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+<form method="POST" action="/login">
+    <div class="login-box">
+        <h1>Login</h1>
+
+        <!-- the input box and label for user Id -->
+        <label for="userId">User ID</label>
+        <input type="ID" id="userId" name="userId"/>
+
+        <!-- the input box and label for user password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"/>
+        <!-- Your codes here -->
+
+        <!-- the login button -->
+        <button type="submit">Login</button>
+        <!-- Your codes here -->
+    </div>
+</form>
+
+
+
+</body>
+</html>
